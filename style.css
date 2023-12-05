@@ -1,0 +1,27 @@
+#app{
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: repeat(2,300px);
+    border: 1px solid black;
+    
+} 
+
+
+
+.card{
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+    border: 1px solid black;
+    
+    
+                        
+}
+
