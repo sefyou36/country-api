@@ -33,10 +33,10 @@ const fetchedData = async ()=>{
         let template = document.createElement('div')
         template.setAttribute("class","card")
         template.innerHTML = `
-        <img src=${el.flags.png} alt="??"/>
+        <img  class ="img" src=${el.flags.png} alt="??"/>
         <h3>${el.name.common}</h3>
-        <p>Capitale: ${el.capital}</p>
-        <p>Continent :${el.continents}</p>
+        <p><b>Capitale:</b> ${el.capital}</p>
+        <p><b>Continent:</b>${el.continents}</p>
       
     `
   
@@ -49,6 +49,17 @@ const fetchedData = async ()=>{
     
     displayUser(myData)
 }
+
+const searchInput = document.createElement("input");
+searchInput.setAttribute("type", "text");
+searchInput.setAttribute("placeholder", "Search for a country");
+document.body.append(searchInput);
+
+
+const searchButton = document.createElement("button");
+  searchButton.textContent = "Search";
+  document.body.append(searchButton);
+
 
 fetchedData()
 
