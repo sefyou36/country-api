@@ -34,11 +34,39 @@ input{
    
 }
 
-button{
-    margin-left: 20px;
+.rech{
+    
+    position: absolute;
+    left: 400px;
+    top: 15px;
     height: 20px;
     width: 60px;
     border-radius: 5px;
     background-color: goldenrod;
 
 }
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .card.dark-mode {
+    background-color: #555;
+    color: #fff;
+  }
+input.dark-mode{
+    background-color: #555;
+    color: #fff;
+    
+  }
+  
+  /* Ajoutez d'autres styles pour le mode sombre selon vos besoins */
+  button{
+    position: relative;
+    left: 1800px;
+  }
+
+  button.dark-mode{
+    background-color: #555;
+    color: #fff;
+  }
